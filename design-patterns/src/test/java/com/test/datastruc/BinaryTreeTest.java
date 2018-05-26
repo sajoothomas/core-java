@@ -15,7 +15,7 @@ public class BinaryTreeTest {
 		tree.addNode(10);
 		tree.addNode(20);
 		tree.addNode(5);
-		tree.display();
+		tree.display(tree.head);
 	}
 
 }

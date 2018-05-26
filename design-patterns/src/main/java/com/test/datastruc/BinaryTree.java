@@ -2,7 +2,7 @@ package com.test.datastruc;
 
 public class BinaryTree {
 
-	TreeNode head;
+	public TreeNode head;
 
 	public int addNode(int value) {
 
@@ -39,20 +39,13 @@ public class BinaryTree {
 		return value;
 	}
 
-	public void display() {
-		rDisplay(head);
-	}
+	public void display(TreeNode current) {
 
-	private void rDisplay(TreeNode current) {
+		if (current != null) {
 
-		if (current == null) {
-			return;
-		} else {
-			
-			rDisplay(current.left);
-
+			display(current.left);
 			System.out.println(current);
-			rDisplay(current.right);
+			display(current.right);
 		}
 
 	}
